@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import './Xpagination.css'; // Import the CSS file
+import './Xpagination.css';
 
 function Xpagination() {
   const [page, setPage] = useState(1);
@@ -9,13 +9,13 @@ function Xpagination() {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
-    // Fetch data from API
     axios.get('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json')
       .then(response => {
         setData(response.data);
         setTotalPages(Math.ceil(response.data.length / perPage));
       })
       .catch(error => {
+        alert('Failed to fetch data');
         console.error('Failed to fetch data:', error);
       });
   }, [perPage]);
