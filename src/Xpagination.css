@@ -1,0 +1,59 @@
+/* Basic styling for the container */
+div {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the table */
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #075e3a;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: white;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Styling for the pagination buttons */
+  button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #075e3a;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  span {
+    margin: 0 10px;
+    font-size: 18px;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #075e3a;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
